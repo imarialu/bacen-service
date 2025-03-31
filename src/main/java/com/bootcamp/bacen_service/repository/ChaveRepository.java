@@ -9,7 +9,8 @@ import java.util.UUID;
 @Repository
 public interface ChaveRepository extends JpaRepository<Chave, UUID> {
 
+    // Os métodos estão sendo escritos pelo Jpa
     boolean existsByChave(final String chave); // Vai verificar se existe chave
 
-    Optional<Chave> findByChave(final String chavePesquisada);
+    Optional<Chave> findByChave(final String chavePesquisada); //
 }
